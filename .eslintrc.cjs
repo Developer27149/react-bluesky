@@ -1,7 +1,8 @@
 module.exports = {
+  // env: An environment provides predefined global variables.
   env: {
     browser: true,
-    esnext: true,
+    es2022: true,
   },
   extends: ['plugin:react/recommended', 'airbnb', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
