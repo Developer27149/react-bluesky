@@ -23,8 +23,17 @@ module.exports = {
     'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx', 'tsx', 'ts'] }],
     'prettier/prettier': 'off',
     'import/order': 'off',
+    semi: [2, 'always'],
+    'react/jsx-props-no-spreading': 'off',
+    'import/extensions': [2, 'never'],
   },
   settings: {
-    'import/core-modules': ['virtual:windi.css', 'virtual:windi-devtools'],
+    'import/core-modules': ['unocss/vite', 'uno.css'],
+    'import/resolver': {
+      node: {
+        extensions: ['.ts', '.tsx'],
+        moduleDirectory: ['src', 'node_modules'],
+      },
+    },
   },
 };
