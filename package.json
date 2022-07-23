@@ -10,10 +10,10 @@
     "preview": "vite preview",
     "prepare": "husky install"
   },
-  "lint-staged": {
-    "src/**/*.{jsx,js,ts,tsx}": [
-      "prettier --write",
-      "eslint --cache --fix",
+  "lint-staged":{
+    "**/*.{js,jsx,ts,tsx}":[
+      "npx prettier --write",
+      "npx eslint --fix",
       "git add"
     ]
   },
